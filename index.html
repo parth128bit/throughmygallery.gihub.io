@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>THROUGH MY GALLERY</title>
+	<link rel="stylesheet" type="text/css" href="tmg.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+<body>
+	
+<nav>
+  <div class="nav">
+  <a href="#home">HOME</a>
+  <!--a href="#about">ABOUT US</a-->
+  <a href="#gallery">GALLERY</a>
+</div>
+</nav>
+<div class="set img1 smooth-scroll" id="home" tabindex="-1"></div>
+<div class="bg-image img1">
+	<div class="caption">
+		
+		<span class="border">THROUGH MY GALLERY</span>
+			
+	</div>
+</div>
+<div style="color: white; background-color: #333;text-align: center;padding: 50px 80px;text-align: justify; opacity: 0.5;">
+	<h3 style="text-align: center;top: 00px; color: white;">ABOUT US</h3>
+	<p>I love photography and filming but i am pursuing computer engineering. So here are some stills that i have shot on my Mobile phone and then i have applied a bit of editing on it. i hope you like it</p>
+</div>
+
+<div class="set img2 smooth-scroll" id="gallery" tabindex="-1"></div>
+<div class="bg-image img2">
+	<div class="caption">
+		<span class="border">GALLERY</span>
+	</div>
+		
+<!--slideshow-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="p1.jpg" style="width:50%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="p3.jpg" style="width:50%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="p4.jpg" style="width:50%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="p2.jpg" style="width:50%">
+  
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+
+	
+</div>
+		<div style="color: #ddd; background-color: #333;text-align: center;padding: 30px 50px;text-align: justify;opacity: 0.5;">
+		<h3 style="text-align: center;color: white;">HOPE YOU ENJOYED GOING THROUGH MY GALLERY</h3>
+	
+		</div>
+
+
+<div class="bg-image img3"></div>
+<footer>
+<div class="footer">
+
+  <span> © Copyright THROUGHMYGALLERY</span>
+  <a href="https://instagram.com/throughmygallery?igshid=10iwuwy7xcave" class="fa fa-instagram"></a>
+</div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="tmg.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!--slideshow-->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
